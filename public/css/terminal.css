@@ -1,0 +1,140 @@
+.terminal {
+  background: #0F172A;
+  color: #E2E8F0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.6;
+  padding: 16px;
+  border-radius: var(--radius);
+  height: 100%;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.terminal-line {
+  margin-bottom: 2px;
+}
+
+.terminal-line.command {
+  color: #6EE7B7;
+}
+
+.terminal-line.command::before {
+  content: '$ ';
+  color: #34D399;
+}
+
+.terminal-line.output {
+  color: #CBD5E1;
+}
+
+.terminal-line.error {
+  color: #FCA5A5;
+}
+
+.terminal-line.success {
+  color: #6EE7B7;
+}
+
+.terminal-line.warning {
+  color: #FDE68A;
+}
+
+.terminal-line.info {
+  color: #93C5FD;
+}
+
+.terminal-line.highlight {
+  color: #F9A8D4;
+  font-weight: 700;
+}
+
+.terminal-line.section {
+  color: #A78BFA;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background: #6EE7B7;
+  animation: blink 1s step-end infinite;
+  vertical-align: text-bottom;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.terminal-table {
+  border-collapse: collapse;
+  margin: 8px 0;
+  font-size: 12px;
+  width: 100%;
+}
+
+.terminal-table th {
+  color: #93C5FD;
+  text-align: left;
+  padding: 4px 12px;
+  border-bottom: 1px solid #334155;
+  font-weight: 600;
+}
+
+.terminal-table td {
+  padding: 3px 12px;
+  border-bottom: 1px solid #1E293B;
+  color: #CBD5E1;
+}
+
+.terminal-table tr.highlight td {
+  color: #FCA5A5;
+  font-weight: 600;
+  background: rgba(220, 53, 69, 0.1);
+}
+
+.terminal-progress {
+  margin: 8px 0;
+  color: #FDE68A;
+}
+
+.terminal-progress-bar {
+  display: inline-block;
+}
+
+.terminal-prompt {
+  color: #34D399;
+}
+
+.terminal-prompt::after {
+  content: '$ ';
+}
+
+.exfil-c2-panel {
+  background: #1A0A0A;
+  border: 1px solid #7F1D1D;
+  border-radius: var(--radius-lg);
+  margin-top: 16px;
+  overflow: hidden;
+}
+
+.exfil-c2-header {
+  background: #7F1D1D;
+  color: #FCA5A5;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+.exfil-c2-body {
+  padding: 12px 16px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: #FCA5A5;
+  max-height: 200px;
+  overflow-y: auto;
+}

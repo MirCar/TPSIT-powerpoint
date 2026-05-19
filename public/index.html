@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TPSIT - Cybersecurity: Attacchi e Difese</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slides.css">
+  <link rel="stylesheet" href="css/demos.css">
+  <link rel="stylesheet" href="css/terminal.css">
+</head>
+<body>
+  <header class="presentation-header">
+    <div class="header-left">
+      <svg class="header-icon" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      </svg>
+      <div class="header-title">
+        <h1>Cybersecurity: Attacchi e Difese</h1>
+        <span class="header-subtitle">TPSIT - Tecnologie e Progettazione di Sistemi Informatici</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <span class="slide-counter" id="slideCounter">1 / 1</span>
+    </div>
+  </header>
+
+  <main class="presentation-container" id="presentationContainer">
+  </main>
+
+  <footer class="presentation-footer">
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <div class="footer-controls">
+      <button class="nav-btn" id="btnPrev" title="Slide precedente (freccia sinistra)">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="nav-btn" id="btnNext" title="Slide successiva (freccia destra)">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+      <button class="nav-btn" id="btnReset" title="Reset database">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+      </button>
+    </div>
+  </footer>
+
+  <script src="js/terminal.js"></script>
+  <script src="js/code-viewer.js"></script>
+  <script src="js/mode-toggle.js"></script>
+  <script src="js/demos/sqli.js"></script>
+  <script src="js/demos/xss.js"></script>
+  <script src="js/demos/csrf.js"></script>
+  <script src="js/demos/bruteforce.js"></script>
+  <script src="js/demos/exfiltration.js"></script>
+  <script src="js/slides-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
